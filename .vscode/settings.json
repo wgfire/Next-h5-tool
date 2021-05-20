@@ -1,0 +1,13 @@
+{
+  // eslint配置项，保存时自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // 默认使用prettier格式化支持的文件
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // 自动设定eslint工作区
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.validate": ["javascript", "javascriptreact"]
+}
