@@ -2,12 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Home.module.scss";
-import { Pstyle } from "../styled/base"; // pstyle不行
-import { Button } from "antd-mobile";
+import { Pstyle } from "../styled/base"; 
+import { Button, Steps } from "antd-mobile";
 import styled from "styled-components";
 const Buttons: any = styled(Button)`
-  width: 100px;
+  width: fit-content;
+  display: inline-block;
 `;
+const Step = Steps.Step;
 export default function Home() {
   return (
     <div>
@@ -18,10 +20,21 @@ export default function Home() {
       </Head>
 
       <main className={styles.container}>
-        <Pstyle fontsize="22px" height="50px">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <Pstyle fontsize="22px" height="50px" margin="20PX 0PX">
+          Welcome to{" "}
+          <a href="https://nextjs.org">
+            <Buttons type="primary" size="small">
+              Next.js
+            </Buttons>
+          </a>
         </Pstyle>
-        <Buttons type="primary">Start</Buttons>
+
+        <Steps size="small" current={5}>
+          <Step title="commitlint/husky/格式美化提交规范" description="commitlint/husky/格式美化提交规范" />
+          <Step title="styled-components/scss支持" description="styled-components/scss支持" />
+          <Step title="postcss-px-to-viewport支持" description="postcss-px-to-viewport支持" />
+          <Step title="antd-mobile" description="antd-mobile" />
+        </Steps>
       </main>
     </div>
   );

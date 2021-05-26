@@ -7,6 +7,10 @@ module.exports = {
   },
   compress: false,
   webpack: (config, {}) => {
+    //config.entry.push(path.join(__dirname, "pages/pagea.tsx"))
+    let fn = config.entry 
+   
+    console.log(config.entry() ) 
     return config;
   },
 };

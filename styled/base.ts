@@ -23,6 +23,7 @@ let divstyle: divType = {
 export const Pstyle = styled.p<baseType>`
   width: ${(props) => setKey(props, "width")};
   height: ${(props) => setKey(props, "height")};
+  line-height: ${(props) => setKey(props, "height")};
   font-size: ${(props) => setKey(props, "fontsize")};
   margin: ${(props) => (props.margin ? props.margin : baseStyle.margin)};
   padding: ${(props) => setKey(props, "padding")};
