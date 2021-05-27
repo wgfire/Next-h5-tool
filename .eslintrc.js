@@ -4,9 +4,9 @@ module.exports = {
     sourceType: "module", // 允许使用导入,
     jsx: true,
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "prettier"],
   extends: [
-    "prettier",
+    "airbnb",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended", // 使用@ typescript-eslint / eslint-plugin中的推荐规则
     "prettier/@typescript-eslint", // 使用eslint-config-prettier禁用一些与Prettier冲突的ESLint规则

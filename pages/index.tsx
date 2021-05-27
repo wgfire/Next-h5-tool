@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Home.module.scss";
-import { Pstyle } from "../styled/base"; 
+import { Pstyle } from "../styled/base";
 import { Button, Steps } from "antd-mobile";
 import styled from "styled-components";
 const Buttons: any = styled(Button)`
